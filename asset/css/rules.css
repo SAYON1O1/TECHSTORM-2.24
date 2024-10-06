@@ -1,0 +1,123 @@
+body {
+    background-image: url(/asset/resource/image/background/stary_bg.jpg);
+    background-size: contain;
+}
+
+main {
+    min-height: 100vh;
+    padding-top: 100px;
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: 10px;
+}
+
+main .image {
+    background-image: url(/asset/resource/image/events-bg/codebee.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main .gradient {
+    background-color: #313131a0;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border: 1px dashed white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #description {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.btn {
+    width: 100%;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #313131;
+    min-width: 200px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .95;
+}
+
+.btn .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+}
+
+main .data-container {
+    margin-block: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+main .box {
+    width: 48%;
+    padding: 20px;
+    background-color: #313131;
+    border-radius: 10px;
+    height: 100%;
+}
+
+main .box h2 {
+    margin-block: 10px;
+}
+
+main .box p {
+    color: gray;
+}
+
+main>h1 {
+    margin-block: 10px;
+    color: gray;
+}
+
+main li {
+    /* list-style: none; */
+    margin-bottom: 10px;
+}
+#rules-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer {
+    margin-top: 30px;
+}

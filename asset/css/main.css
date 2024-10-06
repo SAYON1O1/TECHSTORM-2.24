@@ -1,0 +1,472 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+#page1 {
+    position: sticky;
+    width: 100vw;
+    height: 100vh;
+}
+
+#page1 #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+#page1 #content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: "Regista";
+}
+
+#page1 #content h1 {
+    font-size: 10vw;
+}
+
+#page1 #content img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: fixed;
+}
+
+#page2 {
+    height: fit-content;
+    background-image: url(/asset/resource/image/background/stary_bg.jpg);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    position: sticky;
+    padding-top: 100px;
+    padding-inline: 30px;
+    padding-bottom: 90px;
+}
+
+#page2 .content {
+    max-width: 1000px;
+    margin-inline: auto;
+    display: flex;
+}
+
+#page2 #page2-left {
+    width: 70%;
+}
+
+#page2 #page2-right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page2 #page2-right img {
+    width: 100%;
+    animation: hoverAnim 8s ease-in infinite;
+}
+
+
+#page2 h2 {
+    font-size: 32px;
+}
+
+#page2 h1 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.087);
+}
+
+@keyframes hoverAnim {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(20px, 20px);
+    }
+
+    75% {
+        transform: translate(-20px, -20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@media(max-width: 700px) {
+    #page2 {
+        height: fit-content;
+        padding-bottom: 70px;
+        padding-top: 30px;
+    }
+
+    #page2 .content {
+        flex-direction: column-reverse;
+    }
+
+    #page2 #page2-left {
+        width: 100%;
+    }
+
+    #page2 #page2-left h1 {
+        font-size: 20px;
+    }
+
+    #page2 #page2-right {
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+#page3 {
+    height: fit-content;
+    width: 100%;
+    background-image: url(/asset/resource/image/background/stary_bg.jpg);
+    background-size: contain;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#page3 .content {
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    flex-direction: column;
+}
+
+#page3 .page3-top {
+    display: flex;
+    gap: 10px;
+}
+
+#page3 .page3-top-left {
+    width: 70%;
+    background-color: #ffffff0a;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#page3 .page3-top-right {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#page3 .page3-top-right iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#page3 .page3-bottom {
+    display: flex;
+    gap: 10px;
+}
+
+#page3 .page3-bottom-left {
+    width: 50%;
+    background-color: #ffffff0a;
+    backdrop-filter: blur(3px);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#page3 .page3-bottom-right {
+    width: 50%;
+    background-color: #ffffff0a;
+    backdrop-filter: blur(3px);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+@media(max-width:700px) {
+    #page3 .page3-top {
+        flex-direction: column;
+    }
+
+    #page3 .page3-top-left {
+        width: 100%;
+    }
+}
+
+#page4 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/asset/resource/image/background/stary_bg.jpg);
+    background-size: contain;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+}
+
+#page4 #gallery-bg {
+    width: 780px;
+    margin: auto;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+}
+
+#page4 h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 100px;
+    text-shadow: 0 0 10px gray;
+}
+
+#page4 #gallery-go-to {
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    box-shadow: 0 0 50px white;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@media(max-width: 892px) {
+    #page4 #gallery-bg {
+        width: 97%;
+    }
+}
+
+#page5 {
+    height: fit-content;
+    width: 100%;
+    background-image: url(/asset/resource/image/background/stary_bg.jpg);
+    background-size: contain;
+    position: sticky;
+    padding-top: 100px;
+    padding-inline: 30px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+#page5>.container>h1 {
+    margin-bottom: 10px;
+}
+
+#page5 .container {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+#page5 .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    width: 100%;
+    /* Set the width to 100% for responsiveness */
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+#page5 .scroll-item {
+    flex: 0 0 auto;
+    /* Make the items not grow or shrink, maintaining their original size */
+    height: 75vh;
+    /* Set the width of each item */
+    aspect-ratio: 3/4;
+    background-color: #313131;
+    border-radius: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+#page5 .scroll-item img {
+    width: 100%;
+    transition: all .2s;
+    position: absolute;
+}
+
+#page5 .scroll-item:hover img {
+    scale: 1.1;
+}
+
+#page5 .gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #31313145;
+    padding: 10px;
+    transition: all .2s;
+}
+
+#page5 .scroll-item:hover .gradient {
+    background-color: #31313100;
+}
+
+#page5 .gradient .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px dashed gray;
+    border-radius: 10px;
+}
+
+#page5 .gradient h1 {
+    margin-bottom: 20px;
+}
+
+#page5 #event-left,
+#page5 #event-right {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+}
+
+#page5 #event-left {
+    margin-right: 10px;
+    left: 8%;
+}
+#page5 #event-right {
+    margin-right: 10px;
+    right: 7%;
+}
+
+@media(max-width: 700px) {
+    #page5 .scroll-item {
+        height: 40vh;
+        font-size: 10px;
+    }
+}
+
+#page6 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/asset/resource/image/background/stary_bg.jpg);
+    background-size: contain;
+    position: sticky;
+    display: flex;
+}
+
+#page6 .page6-left {
+    padding-top: 100px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/asset/resource/image/background/astronaut-in\ ocean.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#page6 .page6-left h1 {
+    font-size: 110px;
+    line-height: 6rem;
+}
+
+#page6 .page6-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+#page6 .indi-question {
+    width: 100%;
+}
+
+#page6 .indi-question img {
+    width: 25px;
+    transition: all .5s;
+}
+
+#page6 .indi-question img.active {
+    transform: rotate(180deg);
+}
+
+#page6 .indi-question {
+    background-color: #3131313e;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#page6 .indi-question .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #313131;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#page6 .indi-question .answer {
+    padding: 0px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+}
+
+#page6 .indi-question .answer.active {
+    height: fit-content;
+    padding: 20px;
+}
+
+@media(max-width: 700px) {
+    #page6 {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #page6 .page6-left {
+        width: 100%;
+        margin-block: 50px;
+    }
+
+    #page6 .page6-right {
+        width: 100%;
+        padding-top: 30px;
+    }
+}
